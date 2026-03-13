@@ -4,6 +4,34 @@
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
+## Artifacts
+
+### Aurelius Study Suite (`artifacts/aurelius`)
+
+Premium academic productivity platform with Library Luxe design system.
+
+**Tech Stack:** React + Vite, Tailwind CSS v4, Lucide Icons, Recharts, Wouter, date-fns
+
+**Design System:** "Library Luxe"
+- Light Mode: Cream (#fdfbf7) bg, Racing Green (#064e3b) text, Brushed Gold (#d4af37) accent
+- Dark Mode: Midnight Charcoal (#121212) bg, Soft Ivory (#f8f6f2) text, Gold glow accent
+- Glassmorphism cards, EB Garamond headings, Inter UI font
+
+**Pages:**
+- Dashboard: Readiness Score gauge, AI Strategy Brief, Today's tasks, Active Recall queue
+- Study Planner: Add subjects, manage tasks, trigger spaced repetition
+- Focus Vault: Fullscreen Pomodoro timer (25min), SVG circular countdown
+- Academic Ledger: Sortable table with Performance Delta + urgency color-coding
+- Analytics: Recharts bar chart (hours) + pie chart (urgency distribution)
+
+**Core Algorithms:**
+- Spaced Repetition: +1, +7, +30 day recall scheduling
+- Performance Delta: (target - current) × difficulty / daysToExam
+- Focus Efficiency: completedPomodoros / plannedPomodoros × 100
+- Readiness Score: avg(currentGrade / targetGrade × 100)
+
+**State:** React Context + localStorage persistence (no backend needed)
+
 ## Stack
 
 - **Monorepo tool**: pnpm workspaces

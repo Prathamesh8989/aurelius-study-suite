@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Aurelius Study Suite"
+version = "1.0.0"
+id = "artifacts/aurelius"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19507
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/aurelius run dev"
+
+[services.env]
+PORT = "19507"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/aurelius", "run", "build"]
+publicDir = "artifacts/aurelius/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

@@ -1,0 +1,297 @@
+Act as a **World-Class Full-Stack Engineer, UX Designer, and Systems Architect**.
+
+Build a premium academic productivity platform called:
+
+# Aurelius Study Suite
+
+A luxury-grade intelligent planning system for elite academic performance.
+
+The application must be **beautiful, intelligent, and deployable directly to Vercel**.
+
+---
+
+# 1. TECHNOLOGY STACK (STRICT)
+
+Framework
+Next.js (App Router)
+
+Styling
+Tailwind CSS
+
+Icons
+Lucide Icons
+
+Fonts
+EB Garamond (headings)
+Inter (UI/data)
+
+State Management
+React Context API
+
+Persistence
+Use localStorage synchronization via useEffect to persist state between refreshes.
+
+Deployment
+The app must run using:
+
+npm install
+npm run dev
+
+and deploy directly to Vercel with no extra configuration.
+
+No backend or database is required.
+
+---
+
+# 2. TYPOGRAPHY IMPLEMENTATION (IMPORTANT)
+
+Use Next.js font optimization.
+
+In layout.js:
+
+Import fonts using next/font/google:
+
+EB_Garamond
+Inter
+
+Assign them to CSS variables:
+
+--font-serif
+--font-sans
+
+Then reference them inside Tailwind configuration.
+
+---
+
+# 3. THE "LIBRARY LUXE" DESIGN SYSTEM
+
+Theme Name
+Library Luxe
+
+Color Palette
+
+Light Mode
+Background: Cream (#fdfbf7)
+Text: Racing Green (#064e3b)
+Accent: Brushed Gold (#d4af37)
+
+Dark Mode
+Background: Midnight Charcoal (#121212)
+Text: Soft Ivory (#f8f6f2)
+Accent: Gold glow (#d4af37)
+
+Theme Toggle
+Sun/Moon icon in header
+
+Transitions
+Smooth 300ms theme interpolation.
+
+Visual Style
+
+Glassmorphism cards
+Backdrop blur: 20px
+0.5px subtle borders
+Elegant shadows
+
+Layout
+
+Header
+Sidebar navigation
+Responsive content grid.
+
+Sidebar Links
+
+Dashboard
+Planner
+Focus Vault
+Academic Ledger
+Analytics
+
+---
+
+# 4. CORE INTELLIGENT ENGINE
+
+Include JSDoc documentation for every algorithm.
+
+---
+
+Spaced Repetition Engine
+
+When a topic is completed, schedule recall sessions using a simplified forgetting curve:
+
++1 day
++7 days
++30 days
+
+Store recall sessions in a Recall Schedule list.
+
+Display them in a timeline.
+
+---
+
+GPA Gap Analyzer
+
+Implement:
+
+Performance Delta =
+(Target Grade - Current Grade) * Difficulty / Days Until Exam
+
+Purpose
+Prioritize subjects where improvement is most critical.
+
+Display
+
+Priority heatmap
+Urgency ranking list.
+
+---
+
+Focus Efficiency Metric
+
+Focus Efficiency =
+Completed Pomodoros / Planned Pomodoros
+
+Display as a percentage stat.
+
+---
+
+# 5. PREMIUM APPLICATION FEATURES
+
+Strategic Overview Dashboard
+
+Include
+
+Readiness Score radial gauge
+Priority heatmap
+Today's tasks
+Upcoming recall sessions
+Focus efficiency stat.
+
+---
+
+Study Plan Generator
+
+Form fields
+
+Subject name
+Current grade
+Target grade
+Difficulty (1–5)
+Exam date
+Daily study hours
+
+Generate structured study tasks.
+
+---
+
+Zen Focus Vault
+
+Full screen Pomodoro mode.
+
+Features
+
+25 minute timer
+Analog-style countdown
+Start / Pause / Reset
+Navigation hidden.
+
+---
+
+Academic Ledger
+
+Table displaying
+
+Subject
+Current grade
+Target grade
+Difficulty
+Days to exam
+Performance Delta
+Urgency ranking
+
+Columns sortable.
+
+---
+
+Study Analytics
+
+Charts showing
+
+Planned hours
+Completed sessions
+Upcoming recall sessions
+Subject urgency.
+
+---
+
+# 6. AI STRATEGY BRIEF (Shock Feature)
+
+On the Dashboard include a small "AI Strategy Brief".
+
+This generates a short two-sentence academic recommendation based on the subject with the highest Performance Delta.
+
+Example
+
+"Your Physics delta is widening. Shifting two hours from English to Physics today will improve your readiness score."
+
+This can be generated using simple rule-based logic.
+
+---
+
+# 7. STATE PERSISTENCE
+
+In StudyContext.js
+
+Use useEffect to sync global state with localStorage so that all study data persists after page refresh or browser restart.
+
+---
+
+# 8. FILE STRUCTURE
+
+/app
+page.js (Dashboard)
+
+planner/page.js
+focus/page.js
+ledger/page.js
+analytics/page.js
+
+/components
+Sidebar.js
+Header.js
+StatCard.js
+PomodoroTimer.js
+Heatmap.js
+RadialGauge.js
+
+/context
+StudyContext.js
+
+/styles
+globals.css
+
+---
+
+# 9. DEVELOPMENT QUALITY
+
+Every major function must include JSDoc comments explaining:
+
+the formulas used
+the reasoning behind spaced repetition
+the performance delta calculation.
+
+Code must be clean, modular, and readable.
+
+---
+
+# FINAL RESULT
+
+Create a polished academic productivity platform that looks like a premium SaaS product.
+
+The application must be
+
+responsive
+visually impressive
+intelligent
+hackathon-ready
+deployable instantly to Vercel.

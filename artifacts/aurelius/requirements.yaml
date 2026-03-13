@@ -1,0 +1,15 @@
+packages:
+  "recharts": "For rendering beautiful analytics charts (Planned vs Completed, Urgency distribution)"
+  "date-fns": "For robust date manipulation in the spaced repetition engine and planner"
+  "lucide-react": "Standard icon library"
+  "wouter": "Routing"
+
+images:
+  - path: "artifacts/aurelius/public/images/library-texture.png"
+    description: "Subtle, dark and elegant library texture, soft focus, warm gold rim lighting, dark academia aesthetic, almost abstract"
+    aspect_ratio: "16:9"
+
+notes:
+  - Pure frontend application using React Context and localStorage
+  - No backend API endpoints are called
+  - Theme switching is handled locally via a custom hook and CSS variables
