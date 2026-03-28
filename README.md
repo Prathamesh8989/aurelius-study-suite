@@ -173,7 +173,3 @@ Cards use `backdrop-filter: blur(20px)` with 0.5px borders and soft shadows. The
 ```
 
 ---
-
-## License
-
-MIT
